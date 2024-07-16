@@ -1,0 +1,10 @@
+name: 'cobadlib'
+
+services:
+  app:
+    build: .
+    command: python manage.py runserver 0.0.0.0:9000
+    volumes:
+      - .:/app
+    ports:
+      - "9000:9000"
