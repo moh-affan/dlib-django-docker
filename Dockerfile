@@ -26,7 +26,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 # Install dlib and face_recognition
-RUN pip install dlib face_recognition
+RUN pip install dlib==19.24.0 face_recognition==1.3.0
 
 # Set the working directory in the container
 WORKDIR /code
